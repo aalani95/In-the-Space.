@@ -1,0 +1,587 @@
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    margin-top: 2.5em;
+    z-index: 999;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.header.container {
+    background-color: #fff;
+    padding-left: 22px;
+    border-radius: 4em;
+}
+
+.site-logo h1 {
+    background: linear-gradient(to right, #26086B 0%, #FC3768 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1.5px;
+}
+
+nav {
+    display: flex;
+    align-content: center;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    border-radius: 2em;
+    background: #fff;
+    padding: 0;
+    padding-left: 22px;
+}
+
+.header ul li {
+    margin-right: 22px;
+    list-style: none; 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.header ul li a {
+    color: #000;
+    text-decoration: none;
+    padding: 4px;
+    transition: .2s;
+}
+
+.header ul li a:hover {
+    border-bottom: 1.5px solid #000;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'aktiv-grotesk', sans-serif;
+    color: #5c6771;
+    line-height: 1.6em;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero {
+    height: 100vh;
+    margin-top: -7.6em;
+    background-image: url("../assets/img/Hero-background.png");
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+h2.slogan {
+    color: #fff;
+    font-size: 70px;
+    text-shadow: #e0e0e0 1px 1px 0, 2px 2px 2px rgba(255,255,255,0);
+}
+
+button.secondary-btn {
+    font-size: 17px;
+    letter-spacing: 1.6px;
+    font-weight: 500;
+    padding: 16px 36px;
+    border: none;
+    background-color: #fff;
+    border-radius: 2em;
+} 
+
+.secondary-btn-txt {
+    margin: 0px;
+    background: linear-gradient(to right, #26086B 0%, #FC3768 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.arrow-down {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 0;
+    right: 50%;
+    margin-right: -50px;
+}
+
+.fa-chevron-down {
+    color: #fff;
+    padding-top: 20%;
+    font-size: 3.5em;
+}
+
+.box-shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+
+.goals {
+    min-height: 70vh;
+    padding-right: 10%;
+    padding-left: 10%;
+    max-width: 1650px;
+    margin: 0 auto;
+    padding-top: 3%;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#intro {
+    margin-bottom: 3%;
+}
+
+#intro .slogan {
+    text-align: center;
+    color: #000;
+}
+
+#intro .slogan span {
+    background: linear-gradient(to right, #26086B 0%, #FC3768 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+}
+
+.goal-card {
+    background-color: #fff;
+    text-align: center;
+    height: 450px;
+    width: 30%;
+    margin-bottom: 6%;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 0 35px 0 rgba(0,0,0,.13);
+    transition: .4s;
+}
+
+.goal-card:hover {
+    box-shadow: 0 7px 35px 0 rgba(0,0,0,.18);
+}
+
+.goal-card-wrap {
+    padding: 2em;
+}
+
+.goal-card img {
+    max-width: 40%;
+}
+
+.goal-card h3 {
+    font-size: 3.11em;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin: .5em;
+    background: linear-gradient(to right, #26086B 0%, #FC3768 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.goal-card p {
+    font-size: 15px;
+    line-height: 1.5em;
+    margin-bottom: 1.7em;
+}
+
+.progress-bar {
+    background-color: #F1F1F1;
+    border-radius: 16px;
+}
+
+.progress {
+    background: linear-gradient(to right, #26086B 0%, #FC3768 100%);
+    border-radius: inherit;
+    text-align: left;
+}
+
+.progress p {
+    padding-left: 12%;
+    color: #fff;
+}
+
+.goal-card img:nth-of-type(2) {
+    max-width: 30%;
+    margin-top: -2.2em;
+}
+
+#story {
+    background-color: #F9FAFC;
+}
+
+.story-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 7em 0;
+}
+
+.story-item {
+    width: 45%;
+}
+
+.story-info .slogan {
+    color: #000;
+}
+
+.story-info .slogan span {
+    background: linear-gradient(to right, #26086B 0%, #FC3768 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+}
+
+.story-info .secondary-btn {
+    margin-top: 2.5em;
+    background: linear-gradient(to right, #26086B 0%, #FC3768 100%);
+}
+
+.story-info .secondary-btn-txt {
+    -webkit-text-fill-color: #fff;
+    background: none;
+}
+
+.story-art {
+    text-align: center;
+}
+
+.story-art img {
+    width: 90%;
+}
+
+#connect {
+    padding-top: 1em;
+    padding-bottom: 8em;
+}
+
+.preform-container {
+    text-align: center;
+}
+
+.preform-container .slogan {
+    color: #000;
+}
+
+.preform-container .slogan span {
+    background: linear-gradient(to right, #26086B 0%, #FC3768 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+}
+
+.propic {
+    border-radius: 10em;
+    max-width: 18%;
+    margin-bottom: 6em;
+    background: linear-gradient(to right, #26086B 0%, #FC3768 100%);
+    padding: 5px;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-input,
+.form-button {
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 1.2px;
+    border: 0;
+    outline: none;
+}
+
+.form-input {
+    padding: 1.5em;
+
+}
+
+.form-input::placeholder {
+    opacity: .5;
+}
+
+.form-input:focus::placeholder {
+    opacity: .9;
+    background: linear-gradient(to right, #26086B 0%, #FC3768 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-item:first-of-type {
+position: relative;
+}
+
+.form-item:first-of-type::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.form-button {
+    background: linear-gradient(to right, #26086B 0%, #FC3768 100%);
+    color: #fff;
+    padding: 1.25em 2.25em;
+}
+
+@media only screen and (min-width: 768px){
+    .form {
+        flex-direction: row;
+        max-width: 550px;
+        border: 8px solid #fff;
+        border-radius: 3em;
+    }
+
+    .form-item:first-of-type::after {
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: initial;
+        width: 1px;
+        height: initial;
+    }
+
+    .form-item:last-of-type {
+        flex-grow: 1;
+    }
+
+    .form-button {
+        margin-left: auto;
+        border-radius: 3em;
+    }
+}
+
+footer {
+    background-color: #69777F;
+    height: 85px;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    height: 100%;
+}
+
+.footer-wrap p {
+    color: #fff;
+}
+
+.footer-wrap .fab {
+    color: #D9DDDF;
+    font-size: 2.5em;
+    margin-right: .6em;
+    transition: all .2s;
+}
+
+.footer-wrap .fab:hover {
+    color: #fff;
+    font-size: 2.9em;
+}
+
+/* MEDIA QUERYS */
+
+/* BIG PHONES */
+
+@media only screen and (max-width: 600px) {
+
+    nav {
+        display: none;
+    }
+
+    h2.slogan {
+        font-size: 45px;
+    }
+
+    .goal-card {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 8%;
+    }
+
+    .story-wrap {
+        flex-direction: column;
+        display: flex;
+    }
+
+    .story-item {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 7%;
+    }
+
+    .story-art {
+        display: none;
+    }
+
+    .propic {
+    max-width: 50%;
+    margin-bottom: 4em;
+    }
+
+}
+
+
+/* SMART PHONES */
+
+@media only screen and (max-width: 400px) {
+
+    h2.hero-slogan {
+        font-size: 45px !important;
+    }
+
+    #intro {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    #intro .slogan {
+        padding-bottom: .5em;
+    }
+
+    h2.slogan {
+        font-size: 50px;
+    }
+
+    .goal-card h3 {
+        font-size: 2.11em;
+    }
+
+    .progress {
+        margin-top: 3em;
+    }
+
+    .goal-card img {
+        max-width: 50%;
+    }
+
+    .goal-card img:nth-of-type(2) {
+        max-width: 50%;
+        margin-top: -1em;
+    }
+
+    .story-wrap {
+        padding: 3em 0;
+    }
+    
+    .footer-wrap .fab {
+        margin-right: 0;
+    }
+
+    .footer-wrap .fab:first-of-type{    
+        margin-right: .2em;
+    }
+
+}
+
+/* IPAD & TABLETS */
+
+@media only screen and (max-width: 768px) and (min-width: 601px) {
+
+    .goal-card {
+        width: 45%;
+    }
+
+    .goal-card h3 {
+        font-size: 2.6em;
+    }
+
+    .goal-card img:nth-of-type(2) {
+        margin-top: -1.4em;
+    }
+
+    .story-info .slogan {
+        margin-top: 0;
+    }
+
+    .story-art img {
+        padding-top: 5em;
+    }
+
+    .propic {
+        max-width: 30%;
+        margin-bottom: 4.5em;
+    }
+
+}
+
+/* IPAD PRO & 2IN1 */
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+
+    .goal-card img {
+        max-width: 45%;
+    }
+
+    .goal-card h3 {
+        font-size: 2.2em;
+    }
+
+    .goal-card p {
+        margin-top: 1.5em;
+    }
+
+    .progress-bar {
+        margin-top: 3em;
+    }
+
+    .goal-card img:nth-of-type(2) {
+        max-width: 40%;
+        margin-top: -.2em;
+    }
+
+    .story-info .slogan {
+        margin-top: 0;
+    }
+
+    .story-art img {
+        padding-top: 2.5em;
+    }
+
+}
